@@ -16,8 +16,9 @@ const useYouTubeVideos = (searchQuery, maxResults = 2) => {
         setLoading(true);
         setError(false);
         
-        const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY || 'AIzaSyBxBH-5_hJ2rAm1TuIVzlBK6xcjsch1FCk';
-        const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(searchQuery)}&type=video&maxResults=${maxResults}&key=${API_KEY}`;
+        // Strip out the fallback string entirely
+const API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(searchQuery)}&type=video&maxResults=${maxResults}&key=${API_KEY}`;
         
         const response = await fetch(url);
         
