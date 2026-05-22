@@ -7,7 +7,7 @@ import { getStorage } from "firebase/storage";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBcARZ2yiMyHcJLeoLBtAhRM5y_DnIWe-I",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "pawdentify-278f9.firebaseapp.com",
   projectId: "pawdentify-278f9",
   storageBucket: "pawdentify-278f9.firebasestorage.app",
