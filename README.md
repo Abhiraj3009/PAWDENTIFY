@@ -11,7 +11,6 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Accuracy](https://img.shields.io/badge/Accuracy-95%25-brightgreen.svg)](https://github.com/your-username/dog-breed-ai)
 
-[Live Demo](https://your-domain.com) • [Report Bug](https://github.com/your-username/dog-breed-ai/issues) • [Request Feature](https://github.com/your-username/dog-breed-ai/issues)
 
 </div>
 
